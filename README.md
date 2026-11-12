@@ -1,41 +1,16 @@
-# React + Docker + Kubernetes DevOps Dashboard
+# React + Vite
 
-> [!WARNING]
-> **Work in progress:** This repository is currently being set up. The application source code and deployment configuration have not been added yet.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-A beginner-friendly, hands-on project to learn how to build a React application, package it with Docker, and deploy it locally with Kubernetes.
+Currently, two official plugins are available:
 
-## Project status
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-<details>
-  <summary>Current progress</summary>
+## React Compiler
 
-  - [ ] Set up the React application with Vite
-  - [ ] Build the initial dashboard UI
-  - [ ] Add a Dockerfile and build a container image
-  - [ ] Run the container locally
-  - [ ] Create Kubernetes Deployment and Service manifests
-  - [ ] Deploy the application to a local Kubernetes cluster
-  - [ ] Document the workflow and lessons learned
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-</details>
+## Expanding the ESLint configuration
 
-## Planned technology stack
-
-- **React** — user interface
-- **Vite** — frontend development and build tooling
-- **Git & GitHub** — version control and source hosting
-- **Docker** — containerization
-- **Kubernetes** — container orchestration
-
-## Getting started
-
-There is no runnable application yet. Setup instructions will be added once the initial React app is in place.
-
-## Learning approach
-
-This project is being built step by step, starting from the fundamentals. Each stage will be documented so the repository can serve as a practical learning journey as well as a working project.
-
----
-
-*Status: Initial setup — more coming soon.*
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
